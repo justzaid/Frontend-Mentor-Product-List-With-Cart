@@ -9,6 +9,10 @@ h1 {
     font-size: 40px;
 }
 
+.productCard {
+    margin-bottom: 30px;
+}
+
 .imgButton>img{
     width: 100%;
     border-radius: 10px;
@@ -26,26 +30,181 @@ h1 {
     justify-content: center;
     background-color: white;
     border-radius: 22px;
-    width: 160px;
+    width: 165px;
     height: 45px;
     border-color: hsl(14, 25%, 72%);
     font-family: "Red Hat Text";
     font-weight: 600;
     font-size: 14px;
     transform: translateY(-23px);
+    cursor: pointer;
+}
+
+.incDec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+    border-radius: 22px;
+    width: 165px;
+    height: 45px;
+    border-color: hsl(14, 86%, 42%);
+    font-family: "Red Hat Text";
+    font-weight: 600;
+    font-size: 14px;
+    transform: translateY(-23px);
+}
+
+.dot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
 }
 
 .addToCart > img {
     margin-right: 7px;
 }
 
+.foodCard>p {
+    margin: 0px;
+    margin-top: 2px;
+    padding: 1px;
+}
+
 .foodTitle {
     color: hsl(7, 20%, 60%);
     font-family: "Red Hat Text";
-    font-size: 15px;
+    font-size: 16px;
 }
 
-.foodCard>p {
+.foodDescription {
+    font-family: "Red Hat Text";
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.foodPrice {
+    font-family: "Red Hat Text";
+    color: hsl(14, 86%, 42%);
+    font-weight: 600;
+}
+
+#cart-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 20px 25px 20px;
+    margin-bottom: 40px;
+}
+
+.cartValue {
+    font-family: "Red Hat Text";
+    color: hsl(14, 86%, 42%);;
+}
+
+#order-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Red Hat Text";
+    color: hsl(14, 65%, 9%);
+}
+
+#order-total>p {
+    font-size: 13px;
+    color: hsl(12, 20%, 44%);
+    font-weight: 500;
+}
+
+#order-total:last-child {
+    margin-right: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.cartCardInfoContainerMain {
+    display: flex;
+    flex-direction: column;
+}
+
+.cartCardSeperator {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartCardInfoTitle {
+    color: hsl(14, 65%, 9%);
+    font-family: "Red Hat Text";
     margin: 0px;
-    padding: 1px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.cartCardInfo {
+    display: flex;
+    font-family: "Red Hat Text";
+    font-size: 14px;
+    color: hsl(12, 20%, 44%);
+    font-weight: 400;
+}
+
+.cartCardInfo>.quantity {
+    color: hsl(14, 86%, 42%);
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+.cartCardInfo>.originalItemPrice {
+    margin-right: 12px;
+}
+
+.cartCardInfo>.totalItemPrice {
+    font-weight: 600;
+}
+
+.hr {
+    border-color: hsla(13, 31%, 94%, .2)
+}
+
+.cartCardInfoContainerMain>.blocker>.cartCardSeperator>.removeItem {
+    border: 2px solid hsl(14, 25%, 72%);
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.carbonNote {
+    display: flex;
+    justify-content: center;
+    background-color: hsl(20, 50%, 98%);
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+.carbonNote2 {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Red Hat Text";
+    font-size: 13px;
+    width: 90%;
+}
+
+#confirm {
+    background-color: hsl(14, 86%, 42%);
+    border: 0px solid;
+    color: white;
+    font-family: "Red Hat Text";
+    width: 100%;
+    height: 45px;
+    border-radius: 25px;
+    cursor: pointer;
 }
